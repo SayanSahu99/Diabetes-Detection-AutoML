@@ -30,7 +30,3 @@ def upload_file():
     result = detect_diabetes(data).decode("UTF-8")[-4]
     return render_template('index.html', result=result)
 
-if __name__ == '__main__':
-    # Bind to PORT if defined, otherwise default to 5000.
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
