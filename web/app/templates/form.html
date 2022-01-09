@@ -1,0 +1,60 @@
+
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <body>
+         {% block content %}
+          <div class="card m-5 ">
+            <h5 class="card-header card-title mx-5 my-3 text-center">Enter Details</h5>
+            <div class="card-body">
+                <form  action="/" method="POST">
+                    <div class="form-group row">
+                        <div class="form-group col-md-6">
+                            <label for="Pregnencies" class="form-label col-form-label-lg">No. of Pregnencies</label>
+                            <input name="Pregnencies" type="number" class="form-control" placeholder="Pregnencies" min="0" max="50" id="Pregnencies">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Glucose" class="form-label col-form-label-lg">Glucose</label>
+                            <input name="Glucose" type="number" class="form-control" placeholder="Glucose" min="0" max="250" id="Glucose">
+                        </div>
+                        </div>
+                    <div class="form-group row">
+                        <div class="form-group col-md-6">
+                            <label for="Blood Pressure (mm Hg)" class="form-label col-form-label-lg">Blood Pressure (mm Hg)</label>
+                            <input name="BloodPressure" type="number" class="form-control" placeholder="Blood Pressure" max="200" id="Blood Pressure (mm Hg)">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Skin Thickness (mm)" class="form-label col-form-label-lg">Skin Thickness (mm)</label>
+                            <input name="SkinThickness" type="number" class="form-control" placeholder="Skin Thickness" min="0" max="150" id="Skin Thickness (mm)">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="form-group col-md-6">
+                            <label for="Insulin (mu U/ml)" class="form-label col-form-label-lg">Insulin (mu U/ml)</label>
+                            <input name="Insulin" type="number" class="form-control" placeholder="Insulin" min="0" max="1000" id="Insulin (mu U/ml)">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="BMI" class="form-label col-form-label-lg">BMI</label>
+                            <input name="BMI" type="number" class="form-control" placeholder="BMI" min="0" max="70" id="BMI">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="form-group col-md-6">
+                            <label for="Diabetes Pedigree" class="form-label col-form-label-lg">Diabetes Pedigree</label>
+                            <input name="DiabetesPedigree" type="number" class="form-control" placeholder="Diabetes Pedigree" min="0" max="3" step="0.1" id="Diabetes Pedigree">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Age" class="form-label col-form-label-lg">Age</label>
+                            <input name="Age" type="number" class="form-control" placeholder="Age" min="21" max="100" id="Age">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                    <button type="submit" class="btn btn-lg btn-dark mt-3 form-group row">Submit</button>
+                    </div>
+                </form>             
+            </div>
+          </div>
+        {% endblock %}
+    </body>
+</html>
