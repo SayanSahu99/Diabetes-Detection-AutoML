@@ -1,0 +1,2 @@
+2022-01-09 08:48:57.080 - INFO - 511 - azureml.train.automl._local_managed_utils.is_docker_installed:356 - Docker is not installed.
+2022-01-09 08:48:57.082 - INFO - 511 - azureml.train.automl.automlconfig._start_execution:221 - Submitting remote.
