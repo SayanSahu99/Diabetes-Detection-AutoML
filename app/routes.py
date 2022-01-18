@@ -28,5 +28,8 @@ def upload_file():
     }
     result = detect_diabetes(data)
     result = detect_diabetes(data).decode("UTF-8")[-4]
-    return render_template('index.html', result=result)
+    if(result == '1'):
+        return render_template('positive.html')
+    else:
+        return render_template('negative.html')
 
